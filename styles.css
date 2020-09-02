@@ -7,6 +7,13 @@ grey - #95a5a6;
 red - #ee5253
 
 */
+body {
+  margin: 0;
+}
+.background-image {
+  max-width: 100%;
+  max-height: 100%;
+}
 header {
   max-width: 100%;
   font-family: Roboto;
@@ -26,7 +33,4 @@ header {
   font-size: 20px;
   margin: 15px;
   padding: 5px;
-}
-body {
-  margin: 0;
 }
