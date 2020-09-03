@@ -1,14 +1,29 @@
 <html>
-<header>
-  <p class="header-title"><strong>What's for Dinner?</strong></p>
-  <button class="header-button">ADD A RECIPE</button>
-</header>
-<img class="background-image" src="./assets/burger-friends.jpg" alt="burger-friend-background">
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
+    <section>
+    <header>
+      <p class="header-title"><strong>What's for Dinner?</strong></p>
+      <button class="header-button">ADD A RECIPE</button>
+    </header>
+    <div class="white-boxes">
+      <div class="meal-course-selector">
+          <ul>
+            <p class="meal-selector-header">What are you looking for?<span>*</span></p>
+            <li><input type="radio" id="side" name="course-selection" value="side">Side</li>
+            <li><input type="radio" id="main-dish" name="course-selection" value="main-dish">Main Dish</li>
+            <li><input type="radio" id="dessert" name="course-selection" value="dessert">Dessert</li>
+            <li><input type="radio" id="entire-meal" name="course-selection" value="entire-meal">Entire Meal</li>
+            <button class="lets-cook">LET'S COOK!</button>
+          </ul>
+      </div>
+      <div class="result-window">
+        <img src="./assets/cookpot.svg" alt="cookpot" height="125" width="125">
+      </div>
+    </div>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
