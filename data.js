@@ -10,7 +10,7 @@ var sides = [
 "Garlic Butter Mushrooms",
 "Hush Puppies",
 "French Fries",
-]
+];
 
 var mains = [
 "Spaghetti and Meatballs",
@@ -26,9 +26,9 @@ var mains = [
 "Chicken Fried Rice",
 "Sheet Pan Fajitas",
 "Margarita Pizza",
-]
+];
 
-var dessers = [
+var desserts = [
 "Apple Pie",
 "Lemon Meringue Pie",
 "Black Forest Cake",
@@ -47,4 +47,4 @@ var dessers = [
 "Tart Tatin",
 "Croissants",
 "Eclairs",
-]
+];
