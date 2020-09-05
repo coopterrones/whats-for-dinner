@@ -17,6 +17,7 @@ function selectMeal() {
   var randomMain = mains[randomMainValue];
   var randomDessertValue = getRandomIndex(desserts);
   var randomDessert = desserts[randomDessertValue];
+  var randomMeal = ``;
     if (meal[0].checked) {
       randomDish = `<p class="result">${randomSide}!</p>`;
       cookpotImg.classList.add("hidden");
@@ -31,8 +32,15 @@ function selectMeal() {
     }
     if (meal[2].checked) {
       randomDish = `<p class="result">${randomDessert}!</p>`;
+      cookpotImg.classList.add("hidden");
       result.classList.remove("hidden");
       randomDishDisplay.innerHTML = randomDish;
+    }
+    if (meal[3].checked) {
+    randomMeal = `${randomMain} with a side of ${randomSide} and ${randomDessert} for dessert!`
+    cookpotImg.classList.add("hidden");
+    result.classList.remove("hidden");
+    randomDishDisplay.innerHTML = randomMeal;
     }
 }
 
