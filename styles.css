@@ -1,25 +1,10 @@
 /* font-family: 'Roboto', sans-serif;
-
 COLORS
 teal - #0fb9b1;
 frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253
-
 */
-body {
-  background: url('./assets/burger-friends.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-}
-.background-image {
-  max-width: 100%;
-  max-height: 100%;
-}
-.body-container-parent {
-  position: absolute;
-}
 header {
   position: relative;
   max-width: 100%;
@@ -28,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .header-button {
   font-weight: normal;
   margin: 15px;
@@ -35,11 +21,39 @@ header {
   border-radius: 5px;
   border-style: none;
 }
+
 .header-title {
   font-weight: bolder;
   font-size: 20px;
   margin: 15px;
   padding: 5px;
+}
+
+body {
+  background: url('./assets/burger-friends.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+/* .background-image {
+  max-width: 100%;
+  max-height: 100%;
+} */
+
+/* .body-container-parent {
+  position: absolute;
+} */
+
+.meal-selector-header {
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+span {
+  color: red;
 }
 
 form {
@@ -50,18 +64,9 @@ form {
   margin: 50px 0px 35px 15px;
   padding: 0px 0px 0px 0px;
 }
+
 li {
   margin: 15px;
-}
-.meal-selector-header {
-  font-family: Roboto, sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 20px;
-}
-
-span {
-  color: red;
 }
 
 .lets-cook {
@@ -77,6 +82,7 @@ span {
 }
 
 .result-window {
+  margin: 50px;
   font-family: Roboto, sans-serif;
   width: 35%;
   background-color: rgba(255,255,255,.8);
@@ -87,6 +93,7 @@ span {
 }
 
 .meal-course-selector {
+  margin: 50px;
   width: 35%;
   background-color: rgba(255,255,255,.8);
   display: flex;
@@ -96,19 +103,38 @@ span {
 }
 
 .white-boxes {
-  margin: 50px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  /* flex-direction: row;
+  justify-content: space-around; */
 }
 
 .random-dish-display {
   font-size: 35px;
   margin: 0;
 }
+
 .result {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .hidden {
   display: none;
+}
+
+.clear-button {
+  border-style: none;
+  background-color: #95A5A6;
+  border-radius: 5px;
+  padding: 7px 15px;
+  color: white;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 75px;
 }
