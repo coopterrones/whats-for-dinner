@@ -1,4 +1,3 @@
-//Query Selectors
 var letsCookButton = document.querySelector('.lets-cook');
 var meal = document.querySelectorAll("input[name='course-selection']");
 var randomDishDisplay = document.querySelector(".random-dish-display");
@@ -6,19 +5,25 @@ var cookpotImg = document.querySelector(".image");
 var resultHeader = document.querySelector(".result-header");
 var result = document.querySelector(".result");
 var clearButton = document.querySelector(".clear");
+var addRecipeButton = document.querySelector(".header-button");
+var addRecipeFooter = document.querySelector(".add-recipe-footer");
+var addNewRecipeButton = document.querySelector(".add-new");
+var recipeTypeField = document.getElementById("recipe-type");
+var recipeNameField = document.getElementById("recipe-name");
 
-//Event Listeners
 letsCookButton.addEventListener('click', selectMeal);
 clearButton.addEventListener('click', clearResult);
+addRecipeButton.addEventListener('click', displayRecipeForm);
+addNewRecipeButton.addEventListener('click', addRecipe);
 
 function selectMeal() {
   event.preventDefault();
-  var randomSideValue = getRandomIndex(sides);
-  var randomSide = sides[randomSideValue];
-  var randomMainValue = getRandomIndex(mains);
-  var randomMain = mains[randomMainValue];
-  var randomDessertValue = getRandomIndex(desserts);
-  var randomDessert = desserts[randomDessertValue];
+  var randomSideValue = getRandomIndex(side);
+  var randomSide = side[randomSideValue];
+  var randomMainValue = getRandomIndex(main);
+  var randomMain = main[randomMainValue];
+  var randomDessertValue = getRandomIndex(dessert);
+  var randomDessert = dessert[randomDessertValue];
   var randomMeal = ``;
     if (meal[0].checked) {
       randomDishDisplay.classList.remove("hidden");
@@ -70,9 +75,27 @@ for (var i = 0; i < meal.length; i++) {
     return false;
   }
 }
-//data validtion should iterate through the input fields using meal variable
-//use checked to check for an input.
-//if no input is provided. Disable the button and give an alert message
+
+function displayRecipeForm() {
+  addRecipeFooter.classList.remove("hidden");
+}
+
+function addRecipe() {
+  event.preventDefault();
+  var type = recipeTypeField.value.toLowerCase();
+  var name = recipeNameField.value.toLowerCase();
+  if (type == "side" || "sides" || "side dish") {
+    side.push(name);
+  }
+  if (type == "main" || "main dish" || "mains") {
+    main.push(name);
+  }
+  if (type == "dessert" || "desserts" || "dessert dish"){
+    dessert.push(name);
+  }
+    recipeTypeField.value = "";
+    recipeNameField.value = "";
+}
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);

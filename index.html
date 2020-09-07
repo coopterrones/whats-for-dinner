@@ -4,18 +4,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section>
     <header>
       <p class="header-title"><strong>What's for Dinner?</strong></p>
       <button class="header-button">ADD A RECIPE</button>
     </header>
     <div class="white-boxes">
       <div class="meal-course-selector">
-          <form>
+          <form class="selection">
             <p class="meal-selector-header">What are you looking for?<span>*</span></p>
-            <li><input type="radio" id="side" name="course-selection" value="sides">Side</li>
-            <li><input type="radio" id="main-dish" name="course-selection" value="mains">Main Dish</li>
-            <li><input type="radio" id="dessert" name="course-selection" value="desserts">Dessert</li>
+            <li><input type="radio" id="side" name="course-selection" value="side">Side</li>
+            <li><input type="radio" id="main-dish" name="course-selection" value="main">Main Dish</li>
+            <li><input type="radio" id="dessert" name="course-selection" value="dessert">Dessert</li>
             <li><input type="radio" id="entire-meal" name="course-selection" value="entire-meal">Entire Meal</li>
             <button class="lets-cook">LET'S COOK!</button>
           </form>
@@ -34,6 +33,15 @@
       </div>
     </div>
   </body>
+  <footer class="add-recipe-footer hidden">
+    <form class="recipe-footer">
+      <label class="footer-label" for="recipe-type">Recipe Type:</label>
+      <input type="text" id="recipe-type" name="recipe-type">
+      <label class="footer-label" for="recipe-name">Recipe Name:</label>
+      <input type="text" id="recipe-name" name="recipe-name">
+      <button class="add-new">ADD NEW</button>
+    </form>
+  </footer>
   <script type="text/javascript" src="data.js"></script>
   <script type="text/javascript" src="main.js"></script>
 </html>
