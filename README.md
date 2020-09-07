@@ -1,133 +1,25 @@
-# What's For Dinner?
-### FE1 Solo Challenge
-<img width="973" src="Screen Shot 2020-08-15 at 2.27.04 PM.png">
+# What's for Dinner?
+[Cooper Terrones](https://github.com/coopterrones) What's for Dinner? Solo Project; Mod 1
 
-## Background
-What's for dinner? The ultimate question.
+### Description:
+-The 'What's for Dinner?' application allows users to generate random food dishes by selecting a dish type and generating a random dish by clicking the 'Let's Cook!' button. Users can also add a new dish by name and type that will store in the correct lists.
 
-You will be building an app that helps users choose a recipe and put together meals! 
+### Usage:
+-Navigate [this website](https://coopterrones.github.io/whats-for-dinner/). Generate random dishes by selecting a dish type and clicking the "Let's Cook!" button. Add to the list of dishes by clicking the "Add Recipe" button in the header, and input the recipe type in the correct input field and recipe name in the correct input field. Save the recipe by clicking the "Add New" button. Users can generate new random dishes and watch to see if their value is available for selection, or open dev tools to examine the array type to view the dish in its correct type.
 
+### Timeline:
+-This project was completed over a 5 day period. Each iteration was completed and pushed to Github. This project was completed on time.
 
-## Purpose
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum.
-
-- Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. 
-- Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-## Setup
-
-- Clone this repo down to your machine
-- `cd` into the repository
-- Run `git remote remove origin`
-- On GitHub, create a new repository and connect to this local repository
-- Read this README thoroughly, then begin working!
-
-## Deliverable
-
-Provide the link to **your** repo in the submission form.
-
-## Workflow
-
-Commit at the end of each iteration (if not more frequently) for good habits! 
-
-**Iteration 0:** Build Out Comp
-
-- Images of comp below
-- An assets directory is provided in the repo, and colors are provided in the CSS file. 
-
-**Iteration 1:** Add Random Side, Main and Dessert Functionality
-
-- When a user selects a dish option (don't worry about "Entire Meal" yet) and then clicks the "Let's Cook!" button, the user sees a random dish from the list of possible dishes for that category
-- When the dish name appears, the cookpot icon disappears
-
-**Iteration 2:** Entire Meal Funcitonality
-- When the user selects the "Entire Meal" option and then clicks the "Let's Cook!" button, the user sees a message with a side, main and dessert option from the lists of possible dishes for all categories
-- When the meal items appear, the cookpot icon disappears
-
-
-**Iteration 3:** Error Handling and Clear Button
-
-- The user can click a clear button, which clears the page of any message. User should only be able to click the clear button if a food is visible. When the clear button is clicked and the food is removed, the image of the cookpot should re-appear.
-- User should not be able to click the "Let's Cook" button for a recipe unless they have selected an option.
-
-_Note: You can disable these buttons, hide them, or display a message to the user for error handling. The choice is yours!_
-
-**Iteration 4:** Adding a Recipe
-- The user can clear a "Add a Recipe" button, which will display a form to add a new recipe at the bottom of the page
-- The user can add a type and a name, click the "Add New" recipe and that recipe will be added to the appropriate list
-- *NOTE: None of this needs to persist on page refresh*
-
-**Iteration 5:** BONUS ROUND (Ideas for Extensions)
-- *NOTE: This round is not required, and you should absolutely not be working on this unless your UI is solid and you are 100% sure that all of Iterations 1-4 are fully functional and bug free.*
-- Add a loading animation when a user clicks the "Let's Cook" button to simulate searching for a recipe. Hint - You will need to use CSS Keyframes, and a Javascript timeout function for this. 
-- When a user tries to add to a recipe type that does not exist, we see an error message, OR the new category gets added! 
-- Add the ability to delete a recipe (ie: when a recipe shows up, show a button that says "I don't like this recipe" (or something similar), and remove it from the array so that it will not show up any more (does not need to persist on page load)
-- Make sure that the same recipe (single item or entire meal) won't be generated more than once. Make sure to add error handling for when a user "runs out of recipes." (does not need to persist on page load)
-- Additional functionality for entire meal -> add the ability to swap out meal items. Note: Make sure your design for this matches the theme
-- CYOA Extension! Make sure you run your idea by instructors
-
-### Possible Foods (Feel Free to Add Your Own!)
-
-**Sides**
-- Miso Glazed Carrots
-- Coleslaw
-- Garden Salad
-- Crispy Potatoes
-- Sweet Potato Tots
-- Coconut Rice
-- Caeser Salad
-- Shrimp Summer Rolls
-- Garlic Butter Mushrooms
-- Hush Puppies
-
-**Mains**
-- Spaghetti and Meatballs
-- Pineapple Chicken
-- Shakshuka
-- Thai Yellow Curry
-- Bibimbap
-- Chicken Parmesean
-- Butternut Squash Soup
-- BBQ Chicken Burgers
-- Ramen
-- Empanadas
-- Chicken Fried Rice
-- Sheet Pan Fajitas
-- Margarita Pizza
-
-**Desserts**
-- Apple Pie
-- Lemon Meringue Pie
-- Black Forest Cake
-- Banana Bread
-- Peach Cobbler
-- Cheesecake
-- Funfetti Cake
-- Baklava
-- Flan
-- Macarons
-- Macaroons
-- Chocolate Cupcakes
-- Pavlova
-- Pumpkin Pie
-- Key Lime Pie
-- Tart Tatin
-- Croissants
-- Eclairs
-
-
-### Comps
-**Initial State (Iteration 0)**
-<img width="973" src="Screen Shot 2020-08-15 at 2.27.04 PM.png">
-
-**Iteration 1**
-<img width="973" src="Screen Shot 2020-08-15 at 2.27.14 PM.png">
-
-**Iteration 2** 
-<img width="973" src="Screen Shot 2020-08-15 at 2.27.32 PM.png">
-
-**Iteration 3**
-_shown above_
-
-**Iteration 4**
-<img width="973"  src="Screen Shot 2020-08-15 at 2.42.58 PM.png">
+### Resources
+-To complete our project, we used Github to manage our projects workflow, Atom as the text editor, and Zoom to video conference with peers and mentors for advice. Mentors, rocks (peers in later modules), and peers within the cohort were valuable for insights and rubber-ducking.
+## Iteration 0
+***
+![iteration 0](https://media.giphy.com/media/IdgcSkeMI5f3ymPque/giphy.gif "iteration0")
+## Iteration 1
+![iteration 1](https://media.giphy.com/media/j6022gAzv75KQyr2Mt/giphy.gif "iteration1")
+## Iteration 2
+![iteration 2](https://media.giphy.com/media/ZbT05djMUdXYv2PLKM/giphy.gif "iteration2")
+## Iteration 3
+![iteration 3](https://media.giphy.com/media/ckqii2RGO9Hpwyz4n8/giphy.gif "iteration3")
+## Iteration 4
+![iteration 4](https://media.giphy.com/media/H1T7KJBbFa7x4gyY0j/giphy.gif "iteration4")
