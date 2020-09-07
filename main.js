@@ -7,7 +7,6 @@ var resultHeader = document.querySelector(".result-header");
 var result = document.querySelector(".result");
 var clearButton = document.querySelector(".clear");
 
-
 //Event Listeners
 letsCookButton.addEventListener('click', selectMeal);
 clearButton.addEventListener('click', clearResult);
@@ -49,20 +48,31 @@ function selectMeal() {
     result.classList.remove("hidden");
     randomDishDisplay.innerHTML = randomMeal;
     }
+  dataValidation();
 }
 
-//Clear button functionality
-//On clear button click, reset the result display window to cookpot img.
-//Clear button event listener and DOM
-//clearResult function should add hidden to section random-dish-randomDishDisplay
-//Should remove hidden from the cookpot image
-//add hidden to clear button on click
 function clearResult() {
   randomDishDisplay.classList.add("hidden");
   result.classList.add("hidden");
   cookpotImg.classList.remove("hidden");
-
 }
+
+function dataValidation() {
+var inputValue = false;
+for (var i = 0; i < meal.length; i++) {
+  var radioInput = meal[i];
+  if (radioInput.checked == true) {
+    inputValue = true;
+  }
+  }
+  if (!inputValue) {
+    alert ("Please Choose an meal type!");
+    return false;
+  }
+}
+//data validtion should iterate through the input fields using meal variable
+//use checked to check for an input.
+//if no input is provided. Disable the button and give an alert message
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
