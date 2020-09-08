@@ -9,8 +9,6 @@ var addRecipeButton = document.querySelector(".header-button");
 var addRecipeFooter = document.querySelector(".add-recipe-footer");
 var addNewRecipeButton = document.querySelector(".add-new");
 var newRecipe = document.querySelectorAll(".new-recipe");
-// var recipeTypeField = document.getElementById("recipe-type");
-// var recipeNameField = document.getElementById("recipe-name");
 
 letsCookButton.addEventListener('click', selectMeal);
 clearButton.addEventListener('click', clearResult);
